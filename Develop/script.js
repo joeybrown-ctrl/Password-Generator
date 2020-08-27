@@ -43,17 +43,12 @@ function generatePassword(){
   let numeric = confirm("Would you like your password to contain numbers?");
   let special = confirm("Would you like your password to contain special characters?");
 
+
   if (pwLength < 8 || pwlength > 128) {
     alert("Password length must be between 8 and 128 characters");
   };
 
-  if (UpperCase === true) {
-    Array.prototype.apply(charArr, upperChar);
-  }
-
-  if (lowerCase === true) {
-    Array.prototype.apply(charArr, lowerChar);
-  }
+ 
 
   return password;
 }
