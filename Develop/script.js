@@ -60,7 +60,9 @@ function generatePassword(){
     Array.prototype.apply(charArr, numChar);
   }
 
- 
+  if (special === true) {
+    Array.prototype.apply(charArr, specChar);
+  }
 
   return password;
 }
