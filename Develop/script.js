@@ -21,7 +21,7 @@ function generatePassword(){
   let upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let lowerChar = "abcdefghijklmnopqrstuvwxyz";
   let numChar = "0123456789";
-  let specChar = "!@#$%^&*-+=(){}[]<>?~";
+  let specChar = "!@#$%^&*-+=(){}[]<>/?~";
 
   let upperCharArr = upperChar.split("");
   let lowerCharArr = lowerChar.split("");
@@ -29,13 +29,9 @@ function generatePassword(){
   let specCharArr = specChar.split("");
 
 
-
-
-
-
   // Password is currently blank! We need to make a better one
   let password = "";
-  let charArr [];
+  let charArr = [upperCharArr, lowerCharArr, numCharArr, specCharArr];
 
   let pwLength = prompt("Choose a password length between 8 and 128 characters");
   let lowerCase = confirm("Would you like your password to contain lowercase letters?");
@@ -63,6 +59,15 @@ function generatePassword(){
   if (special === true) {
     Array.prototype.apply(charArr, specChar);
   }
+
+  if (charArr.length === 0) {
+    alert("One or more of the character types must be selected");
+  }
+    //else {
+      //for (let i = 0; i < pwLength.length; i++)
+      //let pwRandom = Math.floor(Math.random().length);
+      //password = charArr[pwRandom];
+    //}
 
   return password;
 }
