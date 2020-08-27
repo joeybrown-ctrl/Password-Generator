@@ -48,6 +48,10 @@ function generatePassword(){
     alert("Password length must be between 8 and 128 characters");
   };
 
+  if (UpperCase === true) {
+    Array.prototype.apply(charArr, upperChar);
+  }
+
  
 
   return password;
