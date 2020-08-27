@@ -52,6 +52,14 @@ function generatePassword(){
     Array.prototype.apply(charArr, upperChar);
   }
 
+  if (lowerCase === true) {
+    Array.prototype.apply(charArr, lowerChar);
+  }
+
+  if (numeric === true) {
+    Array.prototype.apply(charArr, numChar);
+  }
+
  
 
   return password;
