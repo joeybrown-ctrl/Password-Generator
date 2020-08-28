@@ -34,15 +34,22 @@ function generatePassword(){
   let charArr = [];
 
   let pwLength = prompt("Choose a password length between 8 and 128 characters");
+
+  if (pwLength < 8 || pwLength > 128) {
+    alert("Password length must be between 8 and 128 characters. Please click OK and refresh browser.");
+    return 
+  };
+
+  if (isNaN(pwLength) === true) {
+    alert("Please provide password length as a number.  Please click OK and refresh browser.");
+    return
+  }
+
   let lowerCase = confirm("Would you like your password to contain lowercase letters?");
   let UpperCase = confirm("Would you like your password to contain uppercase letters?");
   let numeric = confirm("Would you like your password to contain numbers?");
   let special = confirm("Would you like your password to contain special characters?");
 
-
-  if (pwLength < 8 || pwLength > 128) {
-    alert("Password length must be between 8 and 128 characters");
-  };
 
   if (UpperCase === true) {
     charArr = charArr.concat(upperCharArr)
