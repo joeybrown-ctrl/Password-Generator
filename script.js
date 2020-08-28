@@ -77,7 +77,7 @@ function generatePassword(){
   return password;
 }
 
-// Main Process
+                 
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
