@@ -45,22 +45,18 @@ function generatePassword(){
   };
 
   if (UpperCase === true) {
-    //Array.prototype.apply(charArr, upperChar);
     charArr = charArr.concat(upperCharArr)
   }
 
   if (lowerCase === true) {
-    //Array.prototype.apply(charArr, lowerChar);
     charArr = charArr.concat(lowerCharArr)
   }
 
   if (numeric === true) {
-    //Array.prototype.apply(charArr, numChar);
     charArr = charArr.concat(numCharArr)
   }
 
   if (special === true) {
-    //Array.prototype.apply(charArr, specChar);
     charArr = charArr.concat(specCharArr)
   }
 
