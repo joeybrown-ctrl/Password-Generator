@@ -21,7 +21,7 @@ function generatePassword(){
   let upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   let lowerChar = "abcdefghijklmnopqrstuvwxyz";
   let numChar = "0123456789";
-  let specChar = "!@#$%^&*-+=(){}[]<>/?~";
+  let specChar = "!@#$%^&*_+=()<>/?`~";
 
   let upperCharArr = upperChar.split("");
   let lowerCharArr = lowerChar.split("");
