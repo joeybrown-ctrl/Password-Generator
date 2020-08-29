@@ -4,8 +4,9 @@
 
 [For deployed version, click me](https://joeybrown-ctrl.github.io/)
 
-For week three of boot camp, I was given the assignment of making a random password generator with JavaScript. The project came with a front end already built with CSS 3 and HTML 5, which allowed me to focus solely on coding the logic using JavaScript. 
+For week three of boot camp, I was given the assignment of making a random password generator with JavaScript. The project came with a front end already built with CSS 3 and HTML 5, and looks like this:
 
+![Image of Password Generator](https://github.com/joeybrown-ctrl/Password-Generator/blob/master/Assets/03-javascript-homework-demo.png)
 
 ## Built With
 
