@@ -2,7 +2,7 @@
 
 **version 1.0.0**
 
-
+For week three of boot camp, I was given the assignment of making a random password generator with JavaScript. 
 
 
 ## Built With
