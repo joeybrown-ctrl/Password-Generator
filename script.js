@@ -46,12 +46,12 @@ function generatePassword(){
   }
 
   let lowerCase = confirm("Would you like your password to contain lowercase letters?");
-  let UpperCase = confirm("Would you like your password to contain uppercase letters?");
+  let upperCase = confirm("Would you like your password to contain uppercase letters?");
   let numeric = confirm("Would you like your password to contain numbers?");
   let special = confirm("Would you like your password to contain special characters?");
 
 
-  if (UpperCase === true) {
+  if (upperCase === true) {
     charArr = charArr.concat(upperCharArr)
   }
 
